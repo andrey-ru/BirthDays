@@ -1,16 +1,11 @@
 #!/usr/bin/env php
 <?php
 
-$opts = getopt("b:");
+include 'src/Dates/BirthDays.php';
 
-$birthDate = $opts["b"] ?? "1982-11-16";
-$todayDate = date("Y-m-d");
-
-$birthTime = strtotime($birthDate);
-$todayTime = strtotime($todayDate);
-
-$totalSecs = $todayTime - $birthTime;
-$totalDays = floor($totalSecs / 3600 / 24);
+$birthDate = "1982-11-16";
+$birthDays = new \Andreyru\Dates\BirthDays($birthDate);
+$totalDays = $birthDays->findTotalDays();
 
 echo "$birthDate : $totalDays\n";
 
