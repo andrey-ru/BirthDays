@@ -3,7 +3,7 @@
 
 include 'src/Dates/BirthDays.php';
 
-$birthDate = "1982-11-16";
+$birthDate = '1982-11-16';
 $birthDays = new \Andreyru\Dates\BirthDays($birthDate);
 $totalDays = $birthDays->findTotalDays();
 
