@@ -1,6 +1,6 @@
 <?php
 
-namespace Andreyru\Dates;
+namespace Andrey9x\Dates;
 
 
 class BirthDays

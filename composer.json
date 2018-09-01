@@ -1,0 +1,18 @@
+{
+    "name": "andrey9x/dates",
+    "description": "Find days number from birthday to today",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "andrey",
+            "email": "prog.qt@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Andrey9x\\" : "src"
+        }
+    }
+}

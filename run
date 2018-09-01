@@ -4,7 +4,7 @@
 include 'src/Dates/BirthDays.php';
 
 $birthDate = '1982-11-16';
-$birthDays = new \Andreyru\Dates\BirthDays($birthDate);
+$birthDays = new \Andrey9x\Dates\BirthDays($birthDate);
 $totalDays = $birthDays->findTotalDays();
 
 echo "$birthDate : $totalDays\n";
